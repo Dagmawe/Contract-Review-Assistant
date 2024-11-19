@@ -1,0 +1,8 @@
+runtime: python39  # Or another suitable Python runtime
+env: standard
+service: backend
+entrypoint: gunicorn -b :$PORT app:app --timeout 120
+handlers:
+  - url: /.*
+    script: auto
+  

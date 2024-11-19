@@ -1,0 +1,8 @@
+runtime: nodejs20   # Or another suitable runtime
+env: standard
+service: frontend
+handlers:
+  - url: /.*
+    static_files: app.html  # Replace with your HTML file's name
+    upload: app.html
+    secure: always
