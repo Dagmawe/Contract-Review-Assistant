@@ -16,9 +16,7 @@ logging_client.setup_logging()
 
 app = Flask(__name__)
 
-# CORS(app, resources={r"/eval/*": {"origins": "https://frontend-dot-testing-project-440118.ue.r.appspot.com"}}, supports_credentials=True)
-
-CORS(app, resources={r"/eval/*": {"origins": "*"}}, supports_credentials=True)
+CORS(app, resources={r"/eval/*": {"origins": "https://frontend-dot-testing-project-440118.ue.r.appspot.com"}}, supports_credentials=True)
 
 cache = Cache(app, config={'CACHE_TYPE': 'simple'}) 
 
