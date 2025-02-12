@@ -1,0 +1,3 @@
+step:
+  name: python:latest
+  args: ["echo", "HELLO FROM YAML FILE"]
