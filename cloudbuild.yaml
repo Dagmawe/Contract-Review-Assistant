@@ -1,5 +1,0 @@
-steps:
-  - name: "python:latest"
-    args: ["echo", "HELLO FROM YAML FILE"]
-options:
-  logging: NONE
